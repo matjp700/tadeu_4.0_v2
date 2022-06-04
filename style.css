@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+    background: linear-gradient(0deg,#353535 ,#1C9260 , #1C9260);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    min-height: 800px;
+    padding: 40px 2%;
+    background: linear-gradient(45deg, #1C9260 ,#1C92C4 , #1C9260, #1C9260);
+    background-size: cover;
+}
+header form {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    margin-top: 200px;
+    background-color: #353535;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    color: white;
+}
+header form input {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 5px;
+}
+header form input::placeholder {
+    color: white;
+}
+#Nome, #Email {
+    background-color: #1C92C4;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#Enviar, #Limpar {
+    background-color: #353535;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+#Enviar, #Limpar {
+    color: white;
+}
+#Enviar:hover {
+    cursor: pointer;
+    background-color: black;
+}
+#Limpar:hover {
+    cursor: pointer;
+    background-color: black;
+}
+header form textarea {
+    background-color: #1C92C4;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    padding: 5px;
+    margin: 5px 0px;
+}
+header form textarea::placeholder {
+    color: white;
+    font-size: 20px;
+}
+.scroll_down a {
+    color: white;
+}
+.scroll_down a:hover {
+    color: #353535;
+}
+.scroll_down {
+    color: white;
+    position: absolute;
+    display: flex;
+    bottom: 15vh;
+    left: 50%;
+}
+header nav {
+    float: right;
+}
+
+.desktop-menu ul {
+    list-style: none;
+}
+
+.desktop-menu li {
+    float: left;
+    padding: 0 20px;
+}
+
+.desktop-menu li a {
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: 0.5s;
+}
+
+.desktop-menu li a:hover {
+    color: black;
+}
+header .logo {
+    width: 120px;
+    height: 70px;
+    position: relative;
+    background-image: url(Imagens/Logo/6940d8e00a2540b99f0438e7b5347900.png);
+    background-size: cover;
+    float: left;
+    top: -10px;
+}
+.logo a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.info {
+     max-width: 400px;
+     float: right;
+     margin: 200px 0px;
+}
+
+.info h4 {
+    font-weight: 200;
+    color: white;
+}
+
+.info h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.info h3 {
+    color: white;
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+main {
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+    background-color: white;
+}
+main .historia {
+    padding: 50px;
+    text-align: center;
+}
+#sobre {
+    width: 49.5%;
+    background: #1C9260;
+    box-shadow: 5px 5px 0px 0px black;
+    padding: 40px;
+    margin-bottom: 20px;
+    color: white;
+}
+#sobre h2{
+    color: white;
+    padding-bottom: 20px;
+}
+#servicos {
+    margin-top: 30px;
+    margin-left: 50.5%;
+    background: #1C92C4;
+    box-shadow: 5px 5px 0px 0px black;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+#servicos h2 {
+    padding-bottom: 20px;
+    color: white;
+}
+#servicos table {
+    background-color: #353535;
+    padding: 0px;
+}
+#servicos table tr {
+    background-color: white;
+}
+#servicos table tr th {
+    padding: 10px;
+}
+#servicos table tr td {
+    padding: 5px;
+}
+
+#clientes {
+    display: flex;
+    align-items: center;
+    background-color: #353535;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 0px 0px black;
+}
+#clientes h2 {
+    color: white;
+    padding-left: 30px;
+}
+#clientes .container {
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#clientes .container a {
+    margin-left: 50px;
+}
+#clientes .container a img {
+    width: 100px;
+    display: flex;
+}
+#perguntas {
+    width: 100%;
+    background-color: #353535;
+    box-shadow: 5px 5px black;
+    padding: 50px;  
+    margin-bottom: 20px;
+    line-height: 2;
+    overflow: auto;
+}
+#perguntas h2 {
+    color: #1C92C4;
+}
+#perguntas p {
+    color: white;
+}
+#equipe h2 {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#equipe {
+    background-color: #353535;
+    width: 100%;
+    margin-bottom: 20px;
+    color: white;
+    box-shadow: 5px 5px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#equipe p {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#equipe div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+#equipe img {
+    width: 90px;
+    border-radius: 30%;
+    border: 2px solid #1C92C4;
+}
+#contato {
+    display: flex;
+    justify-content: center;
+}
+footer {
+    width: 100%;
+    height: 25vh;
+    color: white;
+    background: #353535;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a {
+    text-decoration: none;
+    color: #1C92C4;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+footer .copyright {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
